@@ -1,0 +1,5 @@
+FROM tomcat
+
+ADD ./index.html ./usr/local/tomcat/test
+
+ENTRYPOINT service tomcat start && bash
