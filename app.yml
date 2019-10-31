@@ -18,7 +18,7 @@
    - name: docker build image c2
      raw: docker run -dti --name c2 -p 92:80 meghanath/im2:1 /bin/bash
    - name: docker build container c3
-     raw: docker run -it --name c3 -p 91:8080 meghanath/im3:1
+     raw: docker run -it --name c3 -p 91:8080 meghanath/im3:1 /bin/bash
     
 
 
@@ -39,5 +39,5 @@
    - name: docker build container c2
      raw: docker run -dti --name c2 -p 92:80 meghanath/im2:1 /bin/bash
    - name: docker build container c3
-     raw: docker run -it --name c3 -p 91:8080 meghanath/im3:1
+     raw: docker run -it --name c3 -p 91:8080 meghanath/im3:1 /bin/bash
 
