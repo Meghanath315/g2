@@ -12,9 +12,9 @@
      raw: docker rm -f c1 c2
      ignore_errors: true
    - name: docker build image c1
-     raw: docker build -dti --name c1 meghanath/im1:1 -p 98:80 /bin/bash
+     raw: docker run -dti --name c1 meghanath/im1:1 -p 98:80 /bin/bash
    - name: docker build image c2
-     raw: docker build -dti --name c2 meghanath/im2:1 -p 97:80 /bin/bash
+     raw: docker run -dti --name c2 meghanath/im2:1 -p 97:80 /bin/bash
 
  - hosts: qa
    tags: qa
@@ -27,8 +27,8 @@
      raw: docker rm -f c1 c2
      ignore_errors: true
    - name: docker build image c1
-     raw: docker build -dti --name c1 meghanath/im1:1 -p 98:80 /bin/bash
+     raw: docker run -dti --name c1 meghanath/im1:1 -p 98:80 /bin/bash
    - name: docker build image c2
-     raw: docker build -dti --name c2 meghanath/im2:1 -p 97:80 /bin/bash
+     raw: docker run -dti --name c2 meghanath/im2:1 -p 97:80 /bin/bash
 
 
