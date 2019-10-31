@@ -1,6 +1,7 @@
 FROM tomcat
 
 RUN mkdir /usr/local/tomcat/webapps/test 
+
 ADD ./index.html /usr/local/tomcat/webapps/test
 
 ENTRYPOINT service tomcat start && bash
