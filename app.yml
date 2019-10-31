@@ -8,6 +8,8 @@
      raw: docker pull meghanath/im1:1
    - name: pull images from hub
      raw: docker pull meghanath/im2:1
+   - name: pull images from hub
+     raw: docker pull meghanath/im3:1
    - name: delete previous containers
      raw: docker rm -f c1 c2 c3
      ignore_errors: true
@@ -27,6 +29,8 @@
      raw: docker pull meghanath/im1:1
    - name: pull images from hub
      raw: docker pull meghanath/im2:1
+   - name: pull images from hub
+     raw: docker pull meghanath/im3:1
    - name: delete previous containers
      raw: docker rm -f c1 c2
      ignore_errors: true
