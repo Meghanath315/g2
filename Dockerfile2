@@ -1,7 +1,8 @@
 FROM tomcat
 
+
 RUN mkdir /usr/local/tomcat/webapps/test 
 
 ADD ./index.html /usr/local/tomcat/webapps/test
-
+RUN jar cvf test.war
 ENTRYPOINT service tomcat start && bash
