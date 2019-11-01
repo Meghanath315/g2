@@ -6,15 +6,11 @@
    tasks:
    - name: pull images from hub
      raw: docker pull meghanath/im3:1
-
-
    - name: delete previous containers
      raw: docker rm -f c1 c2 c3
      ignore_errors: true
-
-
    - name: docker build image c3
-     raw: docker run -dit --name c3 -p 91:8080 meghanath/im3:1 
+     raw: docker run -dti --name c3 -p 91:8080 meghanath/im3:1 
     
 
 
