@@ -14,7 +14,7 @@
 
 
    - name: docker build image c3
-     raw: docker run -it --name c3 -p 91:8080 meghanath/im3:1 
+     raw: docker run -dit --name c3 -p 91:8080 meghanath/im3:1 
     
 
 
