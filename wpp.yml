@@ -13,9 +13,9 @@
      ignore_errors: true
 
    - name: docker build image c1
-     raw: docker run -dti --name c1 -p 92:80 meghanath/im1:1 /bin/bash
+     raw: docker run -dti --name c1 -p 80:80 meghanath/im1:1 /bin/bash
    - name: docker build image c2
-     raw: docker run -dti --name c2 -p 98:80 meghanath/im2:1 /bin/bash
+     raw: docker run -dti --name c2 -p 92:80 meghanath/im2:1 /bin/bash
     
 
 
