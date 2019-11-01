@@ -8,8 +8,8 @@
      raw: docker pull meghanath/im1:1
    - name: pull images from hub
      raw: docker pull meghanath/im2:1
-   - name: pull images from hub
-     raw: docker pull meghanath/im3:1
+// - name: pull images from hub
+//   raw: docker pull meghanath/im3:1
    - name: delete previous containers
      raw: docker rm -f c1 c2 c3
      ignore_errors: true
@@ -18,8 +18,8 @@
      raw: docker run -dti --name c1 -p 98:80 meghanath/im1:1 /bin/bash
    - name: docker build image c2
      raw: docker run -dti --name c2 -p 92:80 meghanath/im2:1 /bin/bash
-   - name: docker build container c3
-     raw: docker run -it --name c3 -p 91:8080 meghanath/im3:1 /bin/bash
+// - name: docker build container c3
+//   raw: docker run -it --name c3 -p 91:8080 meghanath/im3:1 /bin/bash
     
 
 
@@ -30,8 +30,8 @@
      raw: docker pull meghanath/im1:1
    - name: pull images from hub
      raw: docker pull meghanath/im2:1
-   - name: pull images from hub
-     raw: docker pull meghanath/im3:1
+// - name: pull images from hub
+//   raw: docker pull meghanath/im3:1
    - name: delete previous containers
      raw: docker rm -f c1 c2 c3
      ignore_errors: true
@@ -40,6 +40,6 @@
      raw: docker run -dti --name c1 -p 98:80 meghanath/im1:1 /bin/bash
    - name: docker build container c2
      raw: docker run -dti --name c2 -p 92:80 meghanath/im2:1 /bin/bash
-   - name: docker build container c3
-     raw: docker run -it --name c3 -p 91:8080 meghanath/im3:1 /bin/bash
+// - name: docker build container c3
+//   raw: docker run -it --name c3 -p 91:8080 meghanath/im3:1 /bin/bash
 
